@@ -5,12 +5,12 @@ class Card:
 	copyxs2 = []
 	replace = []
 	d1 = []
-	# the d list is similar to cardValue but contains
-	# all strings for better matching of some container values
+	#the d list is similar to cardValue but contains
+	#all strings for better matching of some container values
 	d = ["2","3","4","5","6","7","8","9","T","J","Q","K","A"]
 	cardSuit = ["C","D","H","S","P"]
 	cardValue = [2,3,4,5,6,7,8,9,"T","J","Q","K","A"]
-	# create the constructor 
+	
 	def __init__(self,rank,suit,xs1,run):
 		self.rank = rank
 		self.suit = suit
@@ -20,7 +20,7 @@ class Card:
 	def __str__(self):
 		return self.rank + self.suit  
 	
-	# match card value to numeric value	
+		
 	def point_val(self):
 		if self.rank == "T":
 			return 10
@@ -174,8 +174,7 @@ class Player:
 		print("Your chosen cards are: " + str(self.checkList))
 		check = False
 		cool = True
-	# i always get confused with where to put booleans like this
-	# seems to work here	
+		
 		while cool:
 			
 			print("your card hand is: ", self.hand)
@@ -351,7 +350,7 @@ class ScoreTable:
 
 	
 
-# create the main menu                       
+                     
 def menu():
 	menu = """
 	1. View scores
@@ -361,7 +360,7 @@ def menu():
 	5. Play 3-player game with stacked deck
 	6. Quit"""
 	print(menu)
-# create new or old player menu
+
 def menuB():
 	menu = """
 	1. new player
@@ -434,10 +433,8 @@ def menuE():
 	
 
 		
-# create a deck function
-# didn't know if this should be
-# a standalone function or a method
-# inside a class	
+
+	
 def fullDeck():
 	
 	cardList = []

@@ -1,4 +1,4 @@
-# Mason-Rummy
+# Mason-Rummy - Python
 Rummy game implemented with Python
 
 Background:
